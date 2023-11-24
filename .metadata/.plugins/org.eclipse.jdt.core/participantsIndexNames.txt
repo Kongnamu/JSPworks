@@ -21,6 +21,8 @@ C:\JSPworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3625667033.ind
 \AddressBook2\src\main\java
 C:\JSPworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2103023578.index
 \jwbook\src\main\java
+C:\JSPworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\103818823.index
+\jwbook\src\main\java
 C:\JSPworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2925313295.index
 \AddressBook\src\main\java
 C:\JSPworks\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2504049282.index
