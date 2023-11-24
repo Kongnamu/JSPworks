@@ -268,3 +268,12 @@
 0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:17:38 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
 0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:17:38 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
 0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:17:47 +0900] "POST /jwbook/login HTTP/1.1" 200 -
+127.0.0.1 - - [21/Nov/2023:16:18:11 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:18:12 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:18:22 +0900] "POST /jwbook/login HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:35:51 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:35:51 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:37:09 +0900] "POST /jwbook/login HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:37:19 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:37:20 +0900] "GET /jwbook/servlet/loginForm.jsp HTTP/1.1" 200 674
+0:0:0:0:0:0:0:1 - - [21/Nov/2023:16:37:25 +0900] "POST /jwbook/login HTTP/1.1" 200 74
