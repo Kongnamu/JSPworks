@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 공통 */
+#content{
+	width: 80%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+ul li{list-style: none; margin: 10px;}
+
+table, th, td{
+		border: 1px solid #ccc; 
+		padding: 10px;	
+		border-collapse: collapse;
+		margin: 0 auto;
+}
+
+/* 학생 목록 스타일*/
+form{width: 360px; margin: 0 auto;}
+ul li label{float: left; width: 80px;}
+ul li input.birth{width: 166px;}

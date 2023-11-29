@@ -28,4 +28,11 @@
   			<form-error-page>/security/loginFailed.jsp</form-error-page>
   		</form-login-config>
   	</login-config>
+  	
+  	<!-- 예외 및 오류 처리 -->
+  	<error-page>
+  		<error-code>500</error-code> <!-- 에러코드 입력 -->
+  		<location>/exception/errorCode_error.jsp</location>
+  	</error-page>
+  	
 </web-app>
