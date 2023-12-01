@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -12,6 +13,9 @@
 	<div id="container">
 	  <section id="memberlist">
 		  <h2>회원 목록</h2>
+		  <div class="logout">
+		    <P><a href="/logout.do">[관리자 로그아웃]</a></P>
+		  </div>
 		  <table>
 			  <thead>
 			    <tr>
@@ -29,12 +33,15 @@
 				  <tr>
 				  <!-- m.mno는 m.getMno()와 같다 -->
 				    <td>${m.mno}</td>
-				    <td>${m.id}</td>
+				    <!-- 아이디를 클릭하면 상세보기로 이동 -->
+				    <td><a href="/memberview.do?id=${m.id}">${m.id}</a></td>
 				    <td>${m.passwd}</td>
 				    <td>${m.name}</td>
 				    <td>${m.email}</td>
 				    <td>${m.gender}</td>
-				    <td>${m.joinDate}</td>
+				    <!-- 시간 표기 수정 -->
+				    <td><fmt:formatDate value ="${m.joinDate}"
+				    		pattern="yyyy-MM-dd HH:mm:ss"/></td>
 				  </tr>
 				</c:forEach>
 			  </tbody>

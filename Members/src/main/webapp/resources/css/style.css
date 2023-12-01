@@ -8,9 +8,9 @@ a{text-decoration: none;}
 
 /* header 스타일 */
 header{height: 80px; background: #0077cc;}
-header #Logo{width: 20%; float: left; line-height: 80px;}
-#Logo h1 a{color: greenyellow; padding-left: 24px; font-style: italic;}
-#Logo h1 a:hover{color: #eee;}
+header #logo{width: 20%; float: left; line-height: 80px;}
+#logo h1 a{color: greenyellow; padding-left: 24px; font-style: italic;}
+#logo h1 a:hover{color: #eee;}
 header nav{width: 70%; float: right;}
 #topMenu{line-height: 80px;}
 #topMenu li{float: left; margin: 0 20px;}
@@ -32,6 +32,7 @@ footer{height: 80px; border-top: 2px solid #222;}
 
 /* 회원 목록 스타일 */
 #memberlist{width: 800px; margin: 20px auto;}
+#memberlist .logout{text-align: right;}
 #memberlist table{width: 800px; margin: 20px auto;}
 #memberlist table, th, td{border: 1px solid #ccc; 
 	border-collapse: collapse; text-align: center;}
@@ -47,8 +48,62 @@ form .button button{padding: 5px;}
 form label{width: 120px; float: left; padding-left: 20px;}
 form input{padding: 5px;}
 
+/* 회원 정보 스타일 */
+#memberview{width: 460px; margin: 20px auto;}
+#memberview table{width: 460px; margin: 20px auto;}
+#memberview table, th, td{border: 1px solid #ccc; 
+	border-collapse: collapse; text-align: center;}
+table th, td{padding: 10px;}
+
+/* 로그인 스타일 */
+#login{width: 400px; margin: 30px auto 100px;}
+#login form{margin: 30px auto;}
+#login form ul li{margin: 30px;} 
+#login .error{color: #b00; margin-top: 16px; font-size: 0.9em;}	
+#login button{width: 100%; padding: 10px 0;}
 
 
+/* 게시글 목록 스타일 */
+#boardlist{width: 800px; margin: 20px auto;}
+#boardlist table{width: 800px; margin: 20px auto;}
+#boardlist table, th, td{border: 1px solid #ccc; 
+	border-collapse: collapse; text-align: center;}
+table th, td{padding: 10px;}
+table thead{background: #eee;}
+#boardlist button{padding: 10px;}
 
+
+/* 글쓰기 스타일 */
+#writeform{width: 550px; margin: 20px auto;}
+#writeform table{width: 600px; margin: 20px auto;}
+#writeform table, th, td{border: 1px solid #ccc; 
+	border-collapse: collapse; text-align: center;}
+table th, td{padding: 10px;}
+table thead{background: #eee;}
+#writeform button{padding: 5px;}
+#writeform textarea{width: 540px; height: 300px; padding:5 px;}
+#writeform input{width: 540px; height: 25px; padding: 5px;}
+
+/* 상세보기 스타일 */
+#board_view{width: 550px; margin: 20px auto;}
+#board_view table{width: 600px; margin: 20px auto;}
+#board_view table, th, td{border: 1px solid #ccc; 
+	border-collapse: collapse; text-align: center;}
+table th, td{padding: 10px;}
+table thead{background: #eee;}
+#board_view button{padding: 5px;}
+#board_view textarea{width: 540px; height: 300px; padding:5 px;}
+#board_view input{width: 540px; height: 25px; padding: 5px;}
+#replyform textarea{height: 100px;}  
+
+/* 댓글 영역 스타일 */
+#board_view .reply{border-top: 1px dotted #ccc; margin: 10px}
+#board_view .reply p{margin: 10px 0; font-size: 0.9em; color: #444;}
+/* 댓글 내용 줄바꿈하기 : white-space: pre-line */
+#board_view .reply p:nth-of-type(1){white-space: pre-line; line-height: 1.5px;}
+#replyform textarea{height: 100px;}
+.replylogin{background-color: #eee; margin: 10px 0; padding:16px; text-align: center;}
+.replylogin a{color: blue;}
+.replylogin a:hover{text-decoration: underline;}
 
 
