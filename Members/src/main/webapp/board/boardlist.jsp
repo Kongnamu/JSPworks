@@ -13,6 +13,17 @@
 	<div id="container">
 	  <section id="boardlist">
 		  <h2>게시글 목록</h2>
+		  <!-- 검색 영역 -->
+		  <form action="" method="get">
+		  	<select name="field">
+		  		<option value="title" ${(field eq "title") ? "selected" : ""}  >제목</option>
+                <option value="id" ${(field eq "id") ? "selected" : ""}>작성자</option>
+		  	</select>
+		  	<input type="text" name="kw" value="${kw}">
+		  	<button type="submit">검색</button>
+		  </form>
+		  
+		  <!-- 글 목록 -->
 		  <table>
 		    <thead>
 		      <tr>
@@ -49,6 +60,36 @@
 		      </c:forEach>
 		    </tbody>
 		  </table>
+		  <!-- 페이지 처리 영역 -->
+		  <div class = "pagination">
+		  <!-- 이전 페이지 -->
+		  	<c:choose>
+		  		<c:when test="${startPage > 1}">
+		  			<a href="/boardlist.do?pageNum=${startPage - 1}">&laquo;</a>
+		  		</c:when>
+		  		<c:otherwise>
+		  			<a href="">&laquo;</a>
+		  		</c:otherwise>
+		  	</c:choose>
+		  <!-- 페이지 리스트 -->
+		  	<c:forEach var="i" begin= "1" end = "${endPage}">
+		  		<c:if test="${page == i}">
+		  			<a href="/boardlist.do?pageNum=${i}"><b>${i}</b></a>
+		  		</c:if>
+		  		<c:if test="${page != i}">
+		  			<a href="/boardlist.do?pageNum=${i}">${i}</a>
+		  		</c:if>
+		  	</c:forEach>
+		  	<!-- 다음 페이지 -->
+		  	<c:choose>
+		  		<c:when test="${endPage > startPage}">
+		  			<a href="/boardlist.do?pageNum=${startPage + 1}">&raquo;</a>
+		  		</c:when>
+		  		<c:otherwise>
+		  			<a href="">&raquo;</a>
+		  		</c:otherwise>
+		  	</c:choose>
+		  </div>
 		  <!-- 글쓰기 버튼 -->
 		  <div>
 		  	<a href="/writeform.do"><button type="button">글쓰기</button></a>

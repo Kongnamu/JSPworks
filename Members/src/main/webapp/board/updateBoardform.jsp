@@ -13,9 +13,9 @@
 	<div id="container">
 	  <section id="writeform">
 	  <h2>게시글 수정</h2>
-	    <form action="/updateboard.do" method="post">
+	    <form action="/updateboard.do" method="post" enctype="multipart/form-data">
 	  		<!-- hidden : ui를 만들지 않고 데이터 숨겨서 보낼때 사용 -->
-	  		<input type="hidden" name="bno" value="${board.bno}">
+	  		<input type="hidden" name="bno" value="${board.bno}" enctype="multipart/form-data">
 		  	<table>
 		  	  <tbody>
 		  	    <tr>
@@ -27,9 +27,12 @@
 		  	      		name="content">${board.content}</textarea></td>
 		  	    </tr>
 		  	    <tr>
+		  	      <td><input type="file" name="filename" value="${board.filename}"></td>
+		  	    </tr>
+		  	    <tr>
 		  	      <td>
 		  	        <button type="submit">저장</button>
-		  	        <a href="/boardlist.do";>
+		  	        <a href="/boardlist.do">
 		  	          <button type="button">취소</button>
 		  	        </a>
 		  	      </td>
